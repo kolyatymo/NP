@@ -1,0 +1,62 @@
+﻿<Window x:Class="_01_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_task"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel LastChildFill="False">
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label FontSize="20" Margin="5">IP:</Label>
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="3" Margin="5" Padding="5">
+                <TextBlock x:Name="MyIP" Grid.Column="1"></TextBlock>
+            </Border>
+            <Label FontSize="20" Margin="5" Grid.Column="2">Port:</Label>
+            <Border Grid.Column="3" BorderBrush="Black" BorderThickness="3" Margin="5" Padding="5">
+                <TextBlock x:Name="MyPort" Grid.Column="3"></TextBlock>
+            </Border>
+        </Grid>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Border  BorderBrush="Black" BorderThickness="3" Margin="5">
+                <Label FontSize="20">Type here...</Label>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="3" Margin="5">
+                <TextBox x:Name="MytextBox" Grid.Column="1" VerticalAlignment="Center" ></TextBox>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="3" Margin="5">
+                <Button Click="Send_Button" Background="LawnGreen" FontSize="20" Width="80" Grid.Column="2">Send</Button>
+            </Border>
+        </Grid>
+        <Label FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Top">Dialog:</Label>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center">Client</Label>
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="5">
+                <ListBox x:Name="ListClient" Grid.Row="1"></ListBox>
+            </Border>
+            <Label FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">Server</Label>
+            <Border Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="5">
+                <ListBox x:Name="ListServer" Grid.Column="1" Grid.Row="1"></ListBox>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Window>
