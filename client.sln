@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_task", "01_task\01_task.csproj", "{65235CE8-7335-487A-BAE4-CDD9B2AEEDBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPServer", "UDPServer\UDPServer.csproj", "{292EC473-1A95-4CFB-98EC-4CDCD996A806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_UDPServer", "UDPServer\01_UDPServer.csproj", "{292EC473-1A95-4CFB-98EC-4CDCD996A806}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

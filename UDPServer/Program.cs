@@ -46,6 +46,11 @@ internal class Program
         {
             return "Im good. how are u?";
         }
+        
+        if (text.Contains("good"))
+        {
+            return "its very good";
+        }
 
         if (text.Contains("what is your name?"))
         {
